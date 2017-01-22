@@ -45,6 +45,8 @@ int points;
 }
 
 
+
+
 // improves the appearance of the application
 - (void)setNiceView {
     self.btn1.layer.borderWidth = 1.0f;
@@ -86,6 +88,8 @@ int points;
     // Dispose of any resources that can be recreated.
 }
 
+
+// INPUT
 // Four guess buttons connected to this function.
 - (IBAction)guessPressed:(UIButton *)sender {
     UIButton *btn = (UIButton *)sender;
@@ -122,11 +126,14 @@ int points;
     }
 }
 
+// INPUT
 // button next question
 - (IBAction)nextQuestion:(UIButton *)sender {
-    notAnswered = YES;
+    
+    //notAnswered = YES;
     self.answerInfo.text = @"";
     if(nrCurrentQuestion < 5) {
+        notAnswered = YES;
         nrCurrentQuestion++;
         [self giveQuestion];
         self.nrQuestionLabel.text = [NSString stringWithFormat: @"Fråga: %d/5", nrCurrentQuestion];
@@ -134,6 +141,7 @@ int points;
     } else {
         self.btnPlayAgain.hidden=NO;
         self.resultInfo.hidden=NO;
+        notAnswered = NO;
         self.resultInfo.text = [NSString stringWithFormat: @"Resultat: %d/5 poäng.", points];
     }
 }
@@ -155,6 +163,8 @@ int points;
     [questions removeObjectAtIndex:qInArray];
 }
 
+
+// INPUT
 // play again button pressed, set data again
 - (IBAction)playAgain:(UIButton *)sender {
     [self setData];

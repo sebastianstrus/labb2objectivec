@@ -14,6 +14,7 @@
 		7DC8E0061E32745A0083F1D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8E0051E32745A0083F1D2 /* Assets.xcassets */; };
 		7DC8E0091E32745A0083F1D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8E0071E32745A0083F1D2 /* LaunchScreen.storyboard */; };
 		7DC8E0131E34CAAE0083F1D2 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8E0121E34CAAE0083F1D2 /* background1.png */; };
+		7DC8E0161E356F060083F1D2 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8E0151E356F060083F1D2 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		7DC8E0081E32745A0083F1D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DC8E00A1E32745A0083F1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC8E0121E34CAAE0083F1D2 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
+		7DC8E0141E356F060083F1D2 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		7DC8E0151E356F060083F1D2 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				7DC8E0121E34CAAE0083F1D2 /* background1.png */,
 				7DC8E00A1E32745A0083F1D2 /* Info.plist */,
 				7DC8DFF91E32745A0083F1D2 /* Supporting Files */,
+				7DC8E0141E356F060083F1D2 /* Model.h */,
+				7DC8E0151E356F060083F1D2 /* Model.m */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				7DC8E0011E32745A0083F1D2 /* ViewController.m in Sources */,
 				7DC8DFFE1E32745A0083F1D2 /* AppDelegate.m in Sources */,
 				7DC8DFFB1E32745A0083F1D2 /* main.m in Sources */,
+				7DC8E0161E356F060083F1D2 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
